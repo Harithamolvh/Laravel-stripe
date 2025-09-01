@@ -12,18 +12,18 @@
 
     <div class="py-12">
         <div class="max-w-4xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg">
+            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg p-4">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
                     <!-- Product Details -->
                     <div class="space-y-6">
-                        <div class="relative overflow-hidden rounded-2xl">
+                        <!-- <div class="relative overflow-hidden rounded-2xl">
                             <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=400&fit=crop" 
                                  alt="{{ $product->name }}" 
-                                 class="w-full h-80 object-cover">
+                                 class=" h-80 object-cover">
                             <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                                 Sale
                             </div>
-                        </div>
+                        </div> -->
                         
                         <div>
                             <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">{{ $product->name }}</h1>
@@ -82,7 +82,7 @@
                             <!-- Submit Button -->
                             <button type="submit" 
                                     id="submit-payment" 
-                                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-lg transition duration-200 flex items-center justify-center space-x-2 shadow-lg">
+                                    class="w-full bg-blue-600 hover:bg-blue-700 text-blue font-semibold py-4 px-6 rounded-lg transition duration-200 flex items-center justify-center space-x-2 shadow-lg">
                                 <span id="button-text">Pay {{ $product->getFormattedPrice() }}</span>
                                 <svg id="spinner" class="animate-spin h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
